@@ -1,0 +1,10 @@
+### Node
+node_modules
+
+### idea
+.idea
+
+### macOS
+.DS_Store
+.AppleDouble
+.LSOverride
