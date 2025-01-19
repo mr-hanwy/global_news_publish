@@ -1,10 +1,9 @@
 // 第三方组件
-import React, { useState } from 'react';
+import { MenuFoldOutlined, MenuUnfoldOutlined, UserOutlined } from '@ant-design/icons';
 import { Avatar, Badge, Dropdown, Layout } from 'antd';
+import React, { useState } from 'react';
 
 const { Header } = Layout;
-
-import { MenuUnfoldOutlined, MenuFoldOutlined, UserOutlined } from '@ant-design/icons';
 
 export default function TopHeader() {
   const [collapsed, setCollapsed] = useState(false);
@@ -15,7 +14,7 @@ export default function TopHeader() {
 
   const items = [
     { label: '个人中心', key: '/profile' },
-    { label: '退出', key: '/logout' }
+    { label: '退出', key: '/logout', danger: true }
   ];
 
   return (

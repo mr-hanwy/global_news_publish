@@ -1,0 +1,54 @@
+{
+  "menus": [
+    {"id": "1", "title": "首页", "path": "/home", "isEnable": true, "isPage": true},
+    {"id": "2", "title": "用户管理", "path": "/user-manage", "isEnable": true, "isPage": true},
+    {"id": "3", "title": "角色管理", "path": "/role-manage", "isEnable": true, "isPage": true},
+    {"id": "4", "title": "菜单管理", "path": "/menu-manage", "isEnable": true, "isPage": true}
+  ],
+  "childrens": [
+    {"id": "1", "title": "用户列表", "path": "/user-manage/user-list", "isEnable": true, "isPage": true, "menuId": "2"},
+    {
+      "id": "2", "title": "查询用户", "path": "/user-manage/user-search", "isEnable": true, "isPage": false,
+      "menuId": "2"
+    },
+    {"id": "3", "title": "添加用户", "path": "/user-manage/user-add", "isEnable": true, "isPage": false, "menuId": "2"},
+    {
+      "id": "4", "title": "修改用户", "path": "/user-manage/user-edit", "isEnable": true, "isPage": false, "menuId": "2"
+    },
+    {
+      "id": "5", "title": "删除用户", "path": "/user-manage/user-delete", "isEnable": true, "isPage": false,
+      "menuId": "2"
+    },
+    {"id": "6", "title": "角色列表", "path": "/role-manage/role-list", "isEnable": true, "isPage": true, "menuId": "3"},
+    {
+      "id": "7", "title": "查询角色", "path": "/role-manage/role-search", "isEnable": true, "isPage": false,
+      "menuId": "3"
+    },
+    {"id": "8", "title": "添加角色", "path": "/role-manage/role-add", "isEnable": true, "isPage": false, "menuId": "3"},
+    {
+      "id": "9", "title": "修改角色", "path": "/role-manage/role-edit", "isEnable": true, "isPage": false, "menuId": "3"
+    },
+    {
+      "id": "10", "title": "删除角色", "path": "/role-manage/role-delete", "isEnable": true, "isPage": false,
+      "menuId": "3"
+    },
+    {
+      "id": "11", "title": "菜单列表", "path": "/menu-manage/menu-list", "isEnable": true, "isPage": true, "menuId": "4"
+    },
+    {
+      "id": "12", "title": "查询菜单", "path": "/menu-manage/menu-search", "isEnable": true, "isPage": false,
+      "menuId": "4"
+    },
+    {
+      "id": "13", "title": "添加菜单", "path": "/menu-manage/menu-add", "isEnable": true, "isPage": false, "menuId": "4"
+    },
+    {
+      "id": "14", "title": "修改菜单", "path": "/menu-manage/menu-edit", "isEnable": true, "isPage": false,
+      "menuId": "4"
+    },
+    {
+      "id": "15", "title": "删除菜单", "path": "/menu-manage/menu-delete", "isEnable": true, "isPage": false,
+      "menuId": "4"
+    }
+  ]
+}

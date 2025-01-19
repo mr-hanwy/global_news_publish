@@ -1,19 +1,13 @@
 // 第三方组件
-import React, { useState } from 'react';
-import { Layout, Menu } from 'antd';
-
-const { Sider } = Layout;
-
 import {
-  AppstoreOutlined,
-  BarChartOutlined,
-  CloudOutlined,
-  ShopOutlined,
-  TeamOutlined,
-  UploadOutlined,
-  UserOutlined,
+  AppstoreOutlined, BarChartOutlined, CloudOutlined, ShopOutlined, TeamOutlined, UploadOutlined, UserOutlined,
   VideoCameraOutlined
 } from '@ant-design/icons';
+import { Layout, Menu } from 'antd';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+
+const { Sider } = Layout;
 
 const items = [
   UserOutlined,
@@ -30,9 +24,14 @@ const items = [
   label: `nav ${ index + 1 }`
 }));
 
-
 export default function SideMenu() {
   const [collapsed, setCollapsed] = useState(false);
+
+  useEffect(() => {
+    axios.get('http://localhost:8000/menus?_embed=childrens').then(resp => console.log(resp));
+  }, []);
+
+
   return (
     <Sider trigger={ null } collapsible collapsed={ collapsed }
            style={ { overflow: 'auto', height: '100dvh', position: 'fixed', left: 0, top: 0, bottom: 0 } }>
